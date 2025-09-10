@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. McDonald's Robotics</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .hero {
+      background: linear-gradient(60deg, #2693ff88 0%, #0e2a47cc 100%), url('assets/robotics_banner.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 64px 0 48px 0;
+      text-align: center;
+      border-radius: 0 0 32px 32px;
+      box-shadow: 0 8px 32px rgba(38,147,255,0.09);
+    }
+    .hero h1 {
+      font-size: 2.7em;
+      margin-bottom: 0.3em;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 12px #12395d99;
+    }
+    .hero p {
+      font-size: 1.25em;
+      margin-bottom: 1.5em;
+      text-shadow: 0 1px 8px #12395d44;
+    }
+    .cta-btn {
+      background: linear-gradient(90deg, #44caff 0%, #0e2a47 100%);
+      color: #fff;
+      padding: 0.8em 2.2em;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 18px #2693ff44;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: pulse 1.2s infinite alternate;
+    }
+    .cta-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 4px 24px #2693ff88;
+      background: linear-gradient(90deg, #2693ff 0%, #44caff 100%);
+    }
+    @keyframes pulse {
+      to { box-shadow: 0 0px 32px #44caff44; }
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      margin: 3em 0;
+    }
+    .feature-card {
+      background: #f6fbff;
+      border-radius: 18px;
+      box-shadow: 0 1px 12px #2693ff22;
+      padding: 1.2em 1em;
+      text-align: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .feature-card:hover {
+      box-shadow: 0 4px 24px #44caff55;
+      transform: translateY(-4px) scale(1.04);
+    }
+    .feature-card h3 {
+      margin-bottom: 0.6em;
+      color: #2693ff;
+    }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      margin: 2.5em 0 1em 0;
+    }
+    .quick-links a {
+      background: #2693ff;
+      color: #fff;
+      padding: 0.8em 1.4em;
+      border-radius: 18px;
+      text-decoration: none;
+      font-weight: 500;
+      box-shadow: 0 1px 8px #2693ff33;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .quick-links a:hover {
+      background: #44caff;
+      box-shadow: 0 2px 12px #44caff55;
+    }
+    @media (max-width: 600px) {
+      .features { grid-template-columns: 1fr; }
+      .hero { padding: 36px 0 24px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="resources.html">Resources</a>
+      <a href="webapps.html">Web Apps</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>Mr. McDonald's Robotics</h1>
+    <p>
+      Welcome to STEAM Magnet High School's Robotics Hub — explore projects, resources, blog posts, and interactive web tools!
+    </p>
+    <button class="cta-btn" onclick="window.location.href='resources.html'">
+      Get Started
+    </button>
+  </div>
+  <main>
+    <section class="features">
+      <div class="feature-card">
+        <h3>Latest Blog</h3>
+        <p>
+          <a href="blog.html#first-day">Welcome to Robotics 2025!</a><br>
+          Find class updates, project spotlights, and news.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Resource Library</h3>
+        <p>
+          <a href="resources.html#arduino-guide">Arduino Guide</a><br>
+          Tutorials, downloads, and reference materials.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Web Apps</h3>
+        <p>
+          <a href="webapps.html">Classroom Tools</a><br>
+          Try the interactive calculator and more!
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>About The Program</h3>
+        <p>
+          <a href="about.html">Meet Mr. McDonald</a><br>
+          Learn about our mission and courses.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="quick-links">
+        <a href="resources.html">Resources</a>
+        <a href="blog.html">Blog</a>
+        <a href="webapps.html">Web Apps</a>
+        <a href="about.html">About</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mr. McDonald's Robotics @ STEAM Magnet School</p>
+  </footer>
+</body>
+</html>

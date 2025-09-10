@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mr. McDonald's Robotics</title>
+
+  <!-- Meta for rich previews -->
+  <meta name="description" content="Projects, resources, and interactive tools for Robotics at STEAM Magnet High School." />
+  <meta property="og:title" content="Mr. McDonald's Robotics" />
+  <meta property="og:description" content="Build. Break. Learn. Repeat. Explore projects, resources, and web apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/robotics_banner.jpg" />
+  <meta name="theme-color" content="#1769ff" />
+
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">🤖</span>
+        <span class="brand-text">Mr. McDonald's Robotics</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="site-menu" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="webapps.html">Web Apps</a></li>
+          <li><a href+"/web_apps/bitFlipper.html>Bit Flipper<</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">STEAM Magnet • Robotics</p>
+      <h1>Build. Break. Learn. Repeat.</h1>
+      <p class="lede">
+        Welcome to our Robotics hub—projects, reference guides, and interactive tools to help you ship real robots.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="resources.html">Start with Resources</a>
+        <a class="btn btn-ghost" href="webapps.html">Open Web Apps</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">What’s here</h2>
+          <p class="section-sub">Quickly get to the good stuff.</p>
+        </header>
+
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-body">
+              <div class="card-kicker">Updates</div>
+              <h3 class="card-title"><a href="blog.html#first-day">Welcome to Robotics 2025</a></h3>
+              <p class="card-text">Class updates, project spotlights, and news from the lab.</p>
+              <a class="card-link" href="blog.html">Read the blog →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <div class="card-kicker">Reference</div>
+              <h3 class="card-title"><a href="resources.html#arduino-guide">Arduino Guide</a></h3>
+              <p class="card-text">Pinouts, code patterns, wiring, and troubleshooting flowcharts.</p>
+              <a class="card-link" href="resources.html">Browse resources →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <div class="card-kicker">Tools</div>
+              <h3 class="card-title"><a href="webapps.html">Classroom Web Apps</a></h3>
+              <p class="card-text">Try our calculators, visual demos, and lab utilities.</p>
+              <a class="card-link" href="webapps.html">Open apps →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <div class="card-kicker">Program</div>
+              <h3 class="card-title"><a href="about.html">About the Program</a></h3>
+              <p class="card-text">Mission, course sequence, and how to thrive in this class.</p>
+              <a class="card-link" href="about.html">Learn more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Quick links</h2>
+          <p class="section-sub">Jump in, no friction.</p>
+        </header>
+
+        <div class="quick-links">
+          <a class="chip" href="resources.html">Resources</a>
+          <a class="chip" href="blog.html">Blog</a>
+          <a class="chip" href="webapps.html">Web Apps</a>
+          <a class="chip" href="about.html">About</a>
+        </div>
+
+        <div class="info-banner" role="note" aria-label="Class info">
+          <span class="badge">Heads-up</span>
+          Office Hours posted on <a href="about.html">About</a>. Bring your bot and your bugs.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Mr. McDonald • STEAM Magnet High School</p>
+      <nav aria-label="Footer">
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="webapps.html">Web Apps</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle with a11y
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('site-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
